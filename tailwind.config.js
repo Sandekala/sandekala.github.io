@@ -5,7 +5,11 @@ module.exports = {
       center: true,
       padding: "16px",
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#7e22ce",
+      },
+    },
     screen: {
       "2xl": "1320px",
     },
