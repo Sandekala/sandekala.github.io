@@ -24,16 +24,16 @@
             <nav id="navbar" class="text-slate-900 right-1 absolute top-full w-full max-w-[150px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent hidden">
               <ul class="block lg:flex">
                 <li class="group">
-                  <a href="#welcome-section" class="mx-8 flex py-2 text-2xl text-slate-900">Home</a>
+                  <a href="#welcome-section" class="mx-8 flex py-2 text-1xl text-slate-900">Home</a>
                 </li>
                 <li class="group">
-                  <a href="#about" class="mx-8 flex py-2 text-2xl text-slate-900">About</a>
+                  <a href="#about" class="mx-8 flex py-2 text-1xl text-slate-900">About</a>
                 </li>
                 <li class="group">
-                  <a href="#projects" class="mx-8 flex py-2 text-2xl text-slate-900">Project</a>
+                  <a href="#projects" class="mx-8 flex py-2 text-1xl text-slate-900">Project</a>
                 </li>
                 <li class="group">
-                  <a href="#contact" class="mx-8 flex py-2 text-2xl text-slate-900">Contact Me</a>
+                  <a href="#contact" class="mx-8 flex py-2 text-1xl text-slate-900">Contact Me</a>
                 </li>
               </ul>
             </nav>
@@ -54,16 +54,15 @@
                 >Dimas Abdul Aziz</span
               >
             </h1>
-            <h2 id="typing" class="font-semibold mt-2 text-slate-700 lg:text-3xl">
-              Front-End Developer | UI/UX Designer
+            <h2 id="typing" class="font-semibold mt-2 text-slate-700 lg:text-3xl h-5">
+            <span id="typed"></span>
             </h2>
           </div>
-          <div class="lg:h-[100%] w-full lg:w-1/2">
+          <div class="w-full lg:w-1/2 min-w-[500px]">
             <img
               src="public/images/dimas.png"
               alt="Foto Dimas"
-              class="m-auto w-[80%]"
-              width="300"
+              class="m-auto w-full"
             />
           </div>
         </div>
@@ -430,5 +429,15 @@
 
 
     <script src="public/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        const typed = new Typed("#typed", {
+        strings: ["Front-End Developer | UI/UX Designer"],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+});
+
+    </script>
   </body>
 </html>

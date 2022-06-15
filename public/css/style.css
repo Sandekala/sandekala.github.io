@@ -638,16 +638,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 1.5rem;
 }
 
+.h-5 {
+  height: 1.25rem;
+}
+
 .w-full {
   width: 100%;
 }
 
 .w-\[28px\] {
   width: 28px;
-}
-
-.w-\[80\%\] {
-  width: 80%;
 }
 
 .w-10 {
@@ -660,6 +660,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-6 {
   width: 1.5rem;
+}
+
+.min-w-\[500px\] {
+  min-width: 500px;
 }
 
 .min-w-min {
@@ -848,11 +852,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.25rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -941,6 +940,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 .active > span:nth-child(3) {
   --tw-rotate: -45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+span > #typed {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  span > #typed {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 .placeholder\:text-transparent::-moz-placeholder {
@@ -1044,10 +1057,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:hidden {
     display: none;
-  }
-
-  .lg\:h-\[100\%\] {
-    height: 100%;
   }
 
   .lg\:h-\[100vh\] {

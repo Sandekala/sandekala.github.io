@@ -18,3 +18,7 @@
 .active > span:nth-child(3) {
   @apply -rotate-45;
 }
+
+span > #typed {
+  @apply font-semibold mt-2 text-slate-700 lg:text-3xl;
+}
