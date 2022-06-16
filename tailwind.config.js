@@ -1,6 +1,9 @@
 module.exports = {
   content: ["index.html"],
   theme: {
+    fontFamily: {
+      poppins: ["Poppins", "ui-sans-serif"],
+    },
     container: {
       center: true,
       padding: "16px",
