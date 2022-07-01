@@ -1,7 +1,6 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "npx tailwindcss -i ./src/css/input.css -o ./public/css/style.css --watch"
@@ -15,5 +14,14 @@
   "dependencies": {
     "prettier": "^2.6.2",
     "prettier-tailwind": "^0.0.0-development"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sandekala/Portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sandekala/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Sandekala/Portfolio#readme",
+  "description": ""
 }
