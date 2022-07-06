@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="public/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -32,16 +29,16 @@
             <nav id="navbar" class="text-slate-900 right-1 absolute top-full w-full max-w-[130px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent hidden">
               <ul class="block lg:flex">
                 <li class="group">
-                  <a href="#welcome-section" class="transition-all duration-300 ease-in-out mx-8 flex py-2 text-1xl lg:text-2xl text-slate-900 hover:text-primary">Home</a>
+                  <a href="#welcome-section" class=" duration-300 transition-all ease-in-out mx-8 flex py-2 text-1xl lg:text-2xl text-slate-900 hover:text-primary welcome-section">Home</a>
                 </li>
                 <li class="group">
-                  <a href="#about" class="transition-all duration-300 ease-in-out mx-8 flex py-2 text-1xl lg:text-2xl text-slate-900 hover:text-primary">About</a>
+                  <a href="#about" class="transition-all duration-300 ease-in-out mx-8 flex py-2 text-1xl lg:text-2xl text-slate-900 hover:text-primary about">About</a>
                 </li>
                 <li class="group">
-                  <a href="#projects" class="transition-all duration-300 ease-in-out mx-8 flex py-2 text-1xl lg:text-2xl text-slate-900 hover:text-primary">Project</a>
+                  <a href="#projects" class="transition-all duration-300 ease-in-out mx-8 flex py-2 text-1xl lg:text-2xl text-slate-900 hover:text-primary projects">Project</a>
                 </li>
                 <li class="group">
-                  <a href="#contact" class="transition-all duration-300 ease-in-out mx-8 flex py-2 text-1xl lg:text-2xl text-slate-900 hover:text-primary">Hire Me</a>
+                  <a href="#contact" class="transition-all duration-300 ease-in-out mx-8 flex py-2 text-1xl lg:text-2xl text-slate-900 hover:text-primary contact">Hire Me</a>
                 </li>
               </ul>
             </nav>
@@ -63,11 +60,11 @@
             <h2 id="typing" class="font-semibold mt-2 text-slate-700 lg:text-3xl h-10">
             <span id="typed"></span>
             </h2>
-            <a href="public/download/Resume-Dimas-Abdul-Aziz-2022.pdf" download="Resume-Dimas-Abdul-Aziz-2022" target="_blank" type="button"  class="lg:text-2xl transition-all duration-300 ease-in-out mt-10 rounded-full bg-primary text-left py-3 px-4 text-white hover:opacity-90 hover:shadow-primary shadow-lg shadow-black/50">
+            <a id="download" href="public/download/Resume-Dimas-Abdul-Aziz-Website.pdf" onclick="return confirm('Are you sure want to download this CV ?')" download="Resume-Dimas-Abdul-Aziz-2022" target="_blank" type="button"  class="lg:text-2xl transition-all duration-300 ease-in-out mt-10 rounded-full bg-primary text-left py-3 px-4 text-white hover:opacity-90 hover:shadow-primary shadow-lg shadow-black/50">
               Download CV<svg class="animate-bounce h-5 inline-block ml-3 mb-1 fill-current" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>DocuSign</title><path d="M9.517 3.31h4.966v6.621h3.31L12 16.552 6.207 9.931h3.31V3.31zM0 19.034h24v1.655H0v-1.655z"/></svg>
             </a>
           </div>
-          <div class="w-full lg:w-1/2 lg:pl-32">
+          <div class="w-full lg:w-1/2 lg:pl-56">
             <div class="relative lg:right-0 lg:mt-9" data-aos="zoom-in-up" data-aos-duration="1000">
               <img src="public/images/dimas.png" alt="Foto Dimas" width="500px" class="relative z-10 mx-auto max-w-full"/>              
               <span class="absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-125">
@@ -95,10 +92,10 @@
                 A Diploma III graduate from
                 <a href="https://www.bsi.ac.id/" target="_blank" class="transition-all duration-300 ease-in-out lg:text-6xl text-3xl font-semibold text-slate-900 hover:text-primary"
                   >Bina Sarana Informatika University</a>
-                with a GPA 3.12 of 4.
+                with 3.12 of 4 GPA.
               </p>
           </div>
-          <div class="justify-center flex flex-col w-full lg:w-1/2 lg:px-36" data-aos="fade-left" data-aos-duration="1000">
+          <div class="justify-center flex flex-col w-full lg:w-1/2 lg:pl-96" data-aos="fade-left" data-aos-duration="1000">
             <h2 class="text-slate-700 flex justify-center items-center font-semibold lg:text-3xl">
               Find <span class="mx-2 lg:text-6xl text-3xl font-semibold top-0 text-primary">
                 Me!</span>on Social Media,</h2>
@@ -217,7 +214,7 @@
                 Product Landing Page
               </figcaption>
             </div>
-            <div class="w-[300px] mx-10 my-2" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="300">
+            <div class="w-[300px] mx-10 my-2" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="200">
               <figure class="rounded relative group">
                 <img src="public/images/buku.jpg" alt="Screenshot Product Landing Page" class="rounded shadow-md shadow-slate-900"/>
                 <div id="view" class="w-full h-0 bg-neutral-800/80 absolute bottom-0 flex items-center justify-center opacity-0 hover:opacity-100 group-hover:h-full transition-all duration-500 ease-out">
@@ -230,7 +227,7 @@
             </div>
           </div>
           <div class="flex flex-wrap justify-evenly">
-            <div class="w-[300px] mx-10 my-2" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="600">
+            <div class="w-[300px] mx-10 my-2" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="300">
               <figure class="rounded relative group">
                 <img src="public/images/tech.jpg" alt="Screenshot Product Landing Page" class="rounded shadow-md shadow-slate-900"/>
                 <div id="view" class="w-full h-0 bg-neutral-800/80 absolute bottom-0 flex items-center justify-center opacity-0 hover:opacity-100 group-hover:h-full transition-all duration-500 ease-out">
@@ -241,7 +238,7 @@
                 Technical Documentation Page
               </figcaption>
             </div>
-            <div class="w-[300px] mx-10 my-2" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="900">
+            <div class="w-[300px] mx-10 my-2" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="400">
               <figure class="rounded relative group">
                 <img src="public/images/tribute.jpg" alt="Screenshot Product Landing Page" class="rounded shadow-md shadow-slate-900"/>
                 <div id="view" class="w-full h-0 bg-neutral-800/80 absolute bottom-0 flex items-center justify-center opacity-0 hover:opacity-100 group-hover:h-full transition-all duration-500 ease-out">
@@ -334,7 +331,7 @@
       class="lg:h-[20vh] flex flex-wrap items-center min-w-min bg-neutral-800 justify-center"
       id="footer"
     >
-      <div class="container">
+      <div class="container relative">
         <div class="flex flex-wrap flex-col justify-center w-full">
           <div class="flex justify-center lg:h-[50px]">
             <!-- Github -->
@@ -418,6 +415,12 @@
             </span></p>
           </div>
         </div>
+        <div class="absolute right-10 top-11 w-[35px] h-[35px] group">
+          <div class="animate-ping rounded-full bg-primary w-full h-full"></div>
+          <div id="toTop" class="w-full h-full bg-primary rounded-full absolute top-0 cursor-pointer"></div>
+          <span class="w-[15px] h-[2px] bg-neutral-300 group-hover:bg-white group-hover:shadow-2xl rounded-full group-hover:shadow-black block origin-right -rotate-[40deg] absolute top-[10px] right-[17px] cursor-pointer"></span>
+          <span class="w-[15px] h-[2px] bg-neutral-300 group-hover:bg-white group-hover:shadow-2xl rounded-full group-hover:shadow-white block origin-left rotate-[40deg] absolute top-[10px] right-[3px] cursor-pointer"></span>
+        </div>
       </div>
     </section>
     <!-- Footer End -->
@@ -425,6 +428,8 @@
 
     <script src="public/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         const typed = new Typed("#typed", {
         strings: ["Junior Front-End Web Developer"],
@@ -436,21 +441,9 @@
     </script>
 
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbzleOJdZvIc644VpGRMKEFrAYfGfIvTXVD9Z-OTKX823hsTep-3ilD0zbQY3w76RgFj/exec'
-      const form = document.forms['submit-to-google-sheet']
-
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => console.log('Success!', response))
-          .catch(error => console.error('Error!', error.message))
-      })
-    </script>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script>
-      AOS.init();
+      AOS.init({
+        once: true
+      });
     </script>
   </body>
 </html>
