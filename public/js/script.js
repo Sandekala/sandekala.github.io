@@ -34,12 +34,19 @@ hamburger.addEventListener('click', function () {
   hamburger.classList.toggle('active');
 });
 
-window.addEventListener('click', (e) => {
-  if (e.target !== hamburger && e.target !== nav) {
+navList.forEach((list) =>
+  list.addEventListener('click', () => {
     nav.classList.add('hidden');
     hamburger.classList.remove('active');
-  }
-});
+  })
+);
+
+// window.addEventListener('click', (e) => {
+//   if (e.target !== hamburger && e.target !== nav) {
+//     nav.classList.add('hidden');
+//     hamburger.classList.remove('active');
+//   }
+// });
 
 // const btnDownload = document.querySelector('#download');
 
