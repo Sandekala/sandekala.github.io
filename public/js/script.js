@@ -2,6 +2,12 @@ const hamburger = document.getElementById('hamburger');
 const nav = document.getElementById('navbar');
 const navList = document.querySelectorAll('#navbar > ul > li > a');
 const sections = document.querySelectorAll('section');
+const toggle = document.getElementById('toggle');
+const checkToggle = document.getElementById('checkToggle');
+const svgSun = document.querySelector('#toggle svg:nth-child(1)');
+const svgMoon = document.querySelector('#toggle svg:nth-child(2)');
+
+//animate on scrolling
 
 window.onscroll = () => {
   const header = document.querySelector('header');
@@ -29,6 +35,8 @@ window.onscroll = () => {
   });
 };
 
+//toggle hamburger
+
 hamburger.addEventListener('click', function () {
   nav.classList.toggle('hidden');
   hamburger.classList.toggle('active');
@@ -40,6 +48,31 @@ navList.forEach((list) =>
     hamburger.classList.remove('active');
   })
 );
+
+//Toggle darkMode
+
+checkToggle.addEventListener('click', () => {
+  if (checkToggle.checked) {
+    toggle.classList.add('toggle-active');
+    toggle.classList.remove('toggle-deactive');
+    svgSun.classList.add('hidden');
+    svgMoon.classList.remove('hidden');
+    document.documentElement.classList.add('dark');
+  } else {
+    toggle.classList.remove('toggle-active');
+    toggle.classList.add('toggle-deactive');
+    svgMoon.classList.add('hidden');
+    svgSun.classList.remove('hidden');
+    document.documentElement.classList.remove('dark');
+  }
+});
+
+// if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+//   document.documentElement.classList.add('dark');
+//   checkToggle.checked;
+// } else {
+//   document.documentElement.classList.remove('dark');
+// }
 
 // window.addEventListener('click', (e) => {
 //   if (e.target !== hamburger && e.target !== nav) {
@@ -97,6 +130,8 @@ navList.forEach((list) =>
 //   });
 // });
 
+//form submitter
+
 const scriptURL = 'https://script.google.com/macros/s/AKfycbzleOJdZvIc644VpGRMKEFrAYfGfIvTXVD9Z-OTKX823hsTep-3ilD0zbQY3w76RgFj/exec';
 const form = document.forms['submit-to-google-sheet'];
 const btnKirim = document.querySelector('[type = submit]');
@@ -144,6 +179,8 @@ form.addEventListener('submit', (e) => {
     }
   });
 });
+
+//button to top
 
 const toTop = document.querySelector('#toTop');
 toTop.addEventListener('click', () => {

@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="overflow-x-hidden dark:bg-dark">
     <!--Nav-bar Start-->
     <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
       <div class="container">
@@ -22,24 +22,31 @@
           </div>
           <div class="flex items-center px-4">
             <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden transition-all duration-300 ease-in-out">
-              <span class="origin-top-left block w-[28px] h-[2px] rounded-full bg-black mb-[7px] transition-all duration-300 ease-in-out"></span>
-              <span class="block w-[28px] h-[2px] rounded-full bg-black mb-[7px] transition-all duration-300 ease-in-out"></span>
-              <span class="origin-bottom-left block w-[28px] h-[2px] rounded-full bg-black transition-all duration-300 ease-in-out"></span>
+              <span class="dark:bg-white origin-top-left block w-[28px] h-[2px] rounded-full bg-black mb-[7px] transition-all duration-300 ease-in-out"></span>
+              <span class="dark:bg-white block w-[28px] h-[2px] rounded-full bg-black mb-[7px] transition-all duration-300 ease-in-out"></span>
+              <span class="dark:bg-white origin-bottom-left block w-[28px] h-[2px] rounded-full bg-black transition-all duration-300 ease-in-out"></span>
             </button>
             <nav id="navbar" class="text-slate-900 right-1 absolute top-full w-full max-w-[130px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent hidden">
-              <ul class="block lg:flex">
+              <ul class="block lg:flex items-center">
                 <li class="group">
-                  <a href="#welcome-section" class=" duration-300 transition-all ease-in-out mx-8 flex py-2 text-1xl lg:text-2xl text-slate-900 hover:text-primary welcome-section">Home</a>
+                  <a href="#welcome-section" class="dark:text-white dark:hover:text-primary duration-300 transition-all ease-in-out mx-8 flex py-2 text-1xl lg:text-2xl text-slate-900 hover:text-primary welcome-section">Home</a>
                 </li>
                 <li class="group">
-                  <a href="#about" class="transition-all duration-300 ease-in-out mx-8 flex py-2 text-1xl lg:text-2xl text-slate-900 hover:text-primary about">About</a>
+                  <a href="#about" class="dark:text-white dark:hover:text-primary transition-all duration-300 ease-in-out mx-8 flex py-2 text-1xl lg:text-2xl text-slate-900 hover:text-primary about">About</a>
                 </li>
                 <li class="group">
-                  <a href="#projects" class="transition-all duration-300 ease-in-out mx-8 flex py-2 text-1xl lg:text-2xl text-slate-900 hover:text-primary projects">Project</a>
+                  <a href="#projects" class="dark:text-white dark:hover:text-primary transition-all duration-300 ease-in-out mx-8 flex py-2 text-1xl lg:text-2xl text-slate-900 hover:text-primary projects">Project</a>
                 </li>
                 <li class="group">
-                  <a href="#contact" class="transition-all duration-300 ease-in-out mx-8 flex py-2 text-1xl lg:text-2xl text-slate-900 hover:text-primary contact">Hire Me</a>
+                  <a href="#contact" class="dark:text-white dark:hover:text-primary transition-all duration-300 ease-in-out mx-8 flex py-2 text-1xl lg:text-2xl text-slate-900 hover:text-primary contact">Hire Me</a>
                 </li>
+                <div class="w-10 h-5 rounded-full border-2 border-solid dark:border-white dark:border-solid dark:bg-dark2 border-black flex items-center bg-neutral-300 relative m-auto mt-4">
+                  <input type="checkbox" name="check" id="checkToggle" class="w-full h-full opacity-0 z-10 hover:cursor-pointer">
+                  <div id="toggle" class="absolute left-0 w-4 rounded-full border-[1px] border-solid border-black h-4 m-0 flex items-center justify-center bg-white shadow-sm shadow-black">
+                    <svg fill="#000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="12px" height="12px"><path d="M 11 0 L 11 3 L 13 3 L 13 0 L 11 0 z M 4.2226562 2.8085938 L 2.8085938 4.2226562 L 4.9296875 6.34375 L 6.34375 4.9296875 L 4.2226562 2.8085938 z M 19.777344 2.8085938 L 17.65625 4.9296875 L 19.070312 6.34375 L 21.191406 4.2226562 L 19.777344 2.8085938 z M 12 5 C 8.1458514 5 5 8.1458514 5 12 C 5 15.854149 8.1458514 19 12 19 C 15.854149 19 19 15.854149 19 12 C 19 8.1458514 15.854149 5 12 5 z M 12 7 C 14.773268 7 17 9.2267316 17 12 C 17 14.773268 14.773268 17 12 17 C 9.2267316 17 7 14.773268 7 12 C 7 9.2267316 9.2267316 7 12 7 z M 0 11 L 0 13 L 3 13 L 3 11 L 0 11 z M 21 11 L 21 13 L 24 13 L 24 11 L 21 11 z M 4.9296875 17.65625 L 2.8085938 19.777344 L 4.2226562 21.191406 L 6.34375 19.070312 L 4.9296875 17.65625 z M 19.070312 17.65625 L 17.65625 19.070312 L 19.777344 21.191406 L 21.191406 19.777344 L 19.070312 17.65625 z M 11 21 L 11 24 L 13 24 L 13 21 L 11 21 z"/></svg>
+                    <svg class="hidden -rotate-90" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 122.89"><path d="M49.06,1.27c2.17-0.45,4.34-0.77,6.48-0.98c2.2-0.21,4.38-0.31,6.53-0.29c1.21,0.01,2.18,1,2.17,2.21 c-0.01,0.93-0.6,1.72-1.42,2.03c-9.15,3.6-16.47,10.31-20.96,18.62c-4.42,8.17-6.1,17.88-4.09,27.68l0.01,0.07 c2.29,11.06,8.83,20.15,17.58,25.91c8.74,5.76,19.67,8.18,30.73,5.92l0.07-0.01c7.96-1.65,14.89-5.49,20.3-10.78 c5.6-5.47,9.56-12.48,11.33-20.16c0.27-1.18,1.45-1.91,2.62-1.64c0.89,0.21,1.53,0.93,1.67,1.78c2.64,16.2-1.35,32.07-10.06,44.71 c-8.67,12.58-22.03,21.97-38.18,25.29c-16.62,3.42-33.05-0.22-46.18-8.86C14.52,104.1,4.69,90.45,1.27,73.83 C-2.07,57.6,1.32,41.55,9.53,28.58C17.78,15.57,30.88,5.64,46.91,1.75c0.31-0.08,0.67-0.16,1.06-0.25l0.01,0l0,0L49.06,1.27 L49.06,1.27z"/></svg>
+                  </div>
+                </div>
               </ul>
             </nav>
           </div>
@@ -54,10 +61,10 @@
         <div class="flex flex-wrap justify-evenly pb-20 px-4">
           <div class="self-center px-4 w-full lg:w-1/2 mb-10">
             <h1 class="text-primary font-semibold lg:text-3xl">
-              Wellcome!! <span class="text-slate-700 font-semibold lg:text-3xl">My name is,</span> 
-              <span class="block lg:text-6xl text-3xl mt-4 text-slate-900 font-bold">Dimas Abdul Aziz</span>
+              Wellcome!! <span class="text-slate-700 font-semibold lg:text-3xl dark:text-textDark">My name is,</span> 
+              <span class="block lg:text-6xl text-3xl mt-4 text-slate-900 font-bold dark:text-white">Dimas Abdul Aziz</span>
             </h1>
-            <h2 id="typing" class="font-semibold mt-2 text-slate-700 lg:text-3xl h-10">
+            <h2 id="typing" class="font-semibold mt-2 text-slate-700 lg:text-3xl h-10 dark:text-textDark">
             <span id="typed"></span>
             </h2>
             <a id="download" href="public/download/Resume-Dimas-Abdul-Aziz-Website.pdf" onclick="return confirm('Are you sure want to download this CV ?')" download="Resume-Dimas-Abdul-Aziz-2022" target="_blank" type="button"  class="lg:text-2xl transition-all duration-300 ease-in-out mt-10 rounded-full bg-primary text-left py-3 px-4 text-white hover:opacity-90 hover:shadow-primary shadow-lg shadow-black/50">
@@ -88,15 +95,15 @@
       <div class="container">
         <div class="flex flex-wrap justify-between px-4 items-center py-[184px]">
           <div class=" w-full lg:w-1/2 lg:px-5 pl-6" data-aos="fade-right" data-aos-duration="1000">
-              <p class=" text-slate-700 lg:text-3xl">
+              <p class=" text-slate-700 lg:text-3xl dark:text-textDark">
                 A Diploma III graduate from
-                <a href="https://www.bsi.ac.id/" target="_blank" class="transition-all duration-300 ease-in-out lg:text-6xl text-3xl font-semibold text-slate-900 hover:text-primary"
+                <a href="https://www.bsi.ac.id/" target="_blank" class="dark:text-white transition-all duration-300 ease-in-out lg:text-6xl text-3xl font-semibold text-slate-900 hover:text-primary"
                   >Bina Sarana Informatika University</a>
                 with 3.12 of 4 GPA.
               </p>
           </div>
           <div class="justify-center flex flex-col w-full lg:w-1/2 lg:pl-96" data-aos="fade-left" data-aos-duration="1000">
-            <h2 class="text-slate-700 flex justify-center items-center font-semibold lg:text-3xl">
+            <h2 class="text-slate-700 flex justify-center items-center font-semibold lg:text-3xl dark:text-textDark">
               Find <span class="mx-2 lg:text-6xl text-3xl font-semibold top-0 text-primary">
                 Me!</span>on Social Media,</h2>
             <div class="flex justify-evenly h-[50px] lg:mr-28">
@@ -104,7 +111,7 @@
               <a id="profile-link"
                 href="https://github.com/Sandekala"
                 target="_blank"
-                class="w-10 h-10 flex items-center justify-center m-2 border-solid border-slate-700 text-slate-700 border-2 rounded-full hover:bg-primary hover:text-white transition-all duration-300 ease-in-out"
+                class="w-10 h-10 flex items-center justify-center m-2 border-solid border-slate-700 dark:border-white dark:text-white dark:border-solid text-slate-700 border-2 rounded-full hover:bg-primary hover:text-white transition-all duration-300 ease-in-out"
               >
                 <svg
                   width="20px"
@@ -121,9 +128,9 @@
               </a>
               <!-- LinkedIn -->
               <a id="profile-link"
-                href="https://www.linkedin.com/in/dimas-abdul-aziz-6a6b6b1a6"
+                href="https://www.linkedin.com/in/diimasaziiz"
                 target="_blank"
-                class="w-10 h-10 flex items-center justify-center m-2 border-solid border-slate-700 text-slate-700 border-2 rounded-full hover:bg-primary hover:text-white transition-all duration-300 ease-in-out"
+                class="w-10 h-10 flex items-center justify-center m-2 border-solid border-slate-700 dark:border-white dark:text-white dark:border-solid text-slate-700 border-2 rounded-full hover:bg-primary hover:text-white transition-all duration-300 ease-in-out"
               >
                 <svg
                   width="20px"
@@ -142,7 +149,7 @@
               <a id="profile-link"
                 href="https://instagram.com/diimasaziiz"
                 target="_blank"
-                class="w-10 h-10 flex items-center justify-center m-2 border-solid border-slate-700 text-slate-700 border-2 rounded-full hover:bg-primary hover:text-white transition-all duration-300 ease-in-out"
+                class="w-10 h-10 flex items-center justify-center m-2 border-solid border-slate-700 dark:border-white dark:text-white dark:border-solid text-slate-700 border-2 rounded-full hover:bg-primary hover:text-white transition-all duration-300 ease-in-out"
                 ><svg
                   width="20px"
                   class="fill-current"
@@ -160,7 +167,7 @@
               <a id="profile-link"
                 href="https://twitter.com/diimasaziiz"
                 target="_blank"
-                class="w-10 h-10 flex items-center justify-center m-2 border-solid border-slate-700 text-slate-700 border-2 rounded-full hover:bg-primary hover:text-white transition-all duration-300 ease-in-out"
+                class="w-10 h-10 flex items-center justify-center m-2 border-solid border-slate-700 dark:border-white dark:text-white dark:border-solid text-slate-700 border-2 rounded-full hover:bg-primary hover:text-white transition-all duration-300 ease-in-out"
                 ><svg
                   width="20px"
                   class="fill-current"
@@ -182,22 +189,22 @@
     <!-- About End -->
 
     <!-- Project Start -->
-    <section class="flex flex-wrap items-center justify-evenly bg-gray-100 py-20"
+    <section class="flex flex-wrap items-center justify-evenly bg-gray-100 py-20 dark:bg-dark2 rounded-3xl"
       id="projects">
       <div class="container">
         <div class="flex flex-col">
           <div class="mx-auto my-24" data-aos="zoom-in-up" data-aos-duration="1000">
-            <h1 class="text-slate-700 text-center lg:text-3xl">
+            <h1 class="text-slate-700 text-center lg:text-3xl dark:text-textDark">
               The
               <span class="lg:text-6xl text-3xl font-semibold text-primary"> project </span>
               I ever
-              <span class="lg:text-6xl text-3xl font-semibold text-slate-900"> made </span>
+              <span class="lg:text-6xl text-3xl font-semibold text-slate-900 dark:text-white"> made </span>
             </h1>
-            <p class="text-slate-700 text-center lg:text-3xl">
+            <p class="text-slate-700 text-center lg:text-3xl dark:text-textDark">
               Most been
-              <span class="lg:text-6xl text-3xl font-semibold text-slate-900"> created </span>
+              <span class="lg:text-6xl text-3xl font-semibold text-slate-900 dark:text-white"> created </span>
               during the
-              <span class="lg:text-6xl text-3xl font-semibold text-slate-900">
+              <span class="lg:text-6xl text-3xl font-semibold text-slate-900 dark:text-white">
                 Course !!!</span
               >
             </p>
@@ -210,7 +217,7 @@
                   <a href="http://sandekala.github.io/Product-Page" target="_blank" class="transition-all duration-300 ease-in-out rounded-full bg-primary text-left py-2 px-4 text-white hover:opacity-90 hover:shadow-lg">View Project</a>
                 </div>
               </figure></a>
-              <figcaption class="text-center lg:text-2xl font-semibold mt-2">
+              <figcaption class="text-center lg:text-2xl font-semibold mt-2 dark:text-white">
                 Product Landing Page
               </figcaption>
             </div>
@@ -221,7 +228,7 @@
                   <a href="http://sandekala.github.io/Aplikasi-rak-buku" target="_blank" class="transition-all duration-300 ease-in-out rounded-full bg-primary text-left py-2 px-4 text-white hover:opacity-90 hover:shadow-lg">View Project</a>
                 </div>
               </figure></a>
-              <figcaption class="text-center lg:text-2xl font-semibold mt-2">
+              <figcaption class="text-center lg:text-2xl font-semibold mt-2 dark:text-white">
                 Aplikasi Rak Buku
               </figcaption>
             </div>
@@ -234,7 +241,7 @@
                   <a href="http://sandekala.github.io/Tech-Doc-Page" target="_blank" class="transition-all duration-300 ease-in-out rounded-full bg-primary text-left py-2 px-4 text-white hover:opacity-90 hover:shadow-lg">View Project</a>
                 </div>
               </figure></a>
-              <figcaption class="text-center lg:text-2xl font-semibold mt-2">
+              <figcaption class="text-center lg:text-2xl font-semibold mt-2 dark:text-white">
                 Technical Documentation Page
               </figcaption>
             </div>
@@ -245,7 +252,7 @@
                   <a href="http://sandekala.github.io/Tribute-Page" target="_blank" class="transition-all duration-300 ease-in-out rounded-full bg-primary text-left py-2 px-4 text-white hover:opacity-90 hover:shadow-lg">View Project</a>
                 </div>
               </figure></a>
-              <figcaption class="text-center lg:text-2xl font-semibold mt-2">
+              <figcaption class="text-center lg:text-2xl font-semibold mt-2 dark:text-white">
                 Tribute Page
               </figcaption>
             </div>
@@ -263,19 +270,19 @@
       <div class="container">
         <div class="flex flex-col flex-wrap items-center justify-center" data-aos="zoom-in" data-aos-duration="1000">
           <div>
-            <h1 class="pt-4 text-slate-700 lg:text-3xl">
+            <h1 class="pt-4 text-slate-700 lg:text-3xl dark:text-textDark">
               Let's work
               <span class="lg:text-6xl text-3xl font-semibold text-primary"
                 >together...</span
               >
             </h1>
-            <p class="pt-4 text-slate-700 text-1xl italic text-center">
+            <p class="pt-4 text-slate-700 text-1xl italic text-center dark:text-white">
               How do you take your coffee?
             </p>
           </div>
           <div>
             <form name="submit-to-google-sheet" method="post" class="max-w-md">
-              <label for="name" class="ml-3 font-semibold lg:text-1xl text-slate-700"
+              <label for="name" class="ml-3 font-semibold lg:text-1xl text-slate-700 dark:text-white"
                 >Name</label
               >
               <input
@@ -285,7 +292,7 @@
                 placeholder="example: Dimas Abdul Aziz"
                 required
                 class="transition-all duration-300 ease-in-out w-full border-2 border-slate-200 rounded-2xl focus:border-2 focus:border-slate-200 focus:bg-neutral-100 focus:outline-none placeholder:text-transparent bg-white hover:bg-neutral-100 p-2 focus:placeholder:text-slate-500"/>
-              <label for="email" class="ml-3 font-semibold lg:text-1xl text-slate-700"
+              <label for="email" class="ml-3 font-semibold lg:text-1xl text-slate-700 dark:text-white"
                 >Email</label
               >
               <input
@@ -295,7 +302,7 @@
                 placeholder="example: exp@mail.com"
                 required
                 class="transition-all duration-300 ease-in-out w-full border-2 border-slate-200 rounded-2xl focus:border-2 focus:border-slate-200 focus:bg-neutral-100 focus:outline-none placeholder:text-transparent bg-white hover:bg-neutral-100 p-2 focus:placeholder:text-slate-500"/>
-              <label for="pesan" class="ml-3 font-semibold lg:text-1xl text-slate-700"
+              <label for="pesan" class="ml-3 font-semibold lg:text-1xl text-slate-700 dark:text-white"
                 >Messages</label
               >
               <textarea
@@ -328,7 +335,7 @@
 
     <!-- Footer Start -->
     <section
-      class="lg:h-[20vh] flex flex-wrap items-center min-w-min bg-neutral-800 justify-center"
+      class="lg:h-[20vh] flex flex-wrap items-center min-w-min bg-neutral-800 justify-center dark:bg-dark2"
       id="footer"
     >
       <div class="container relative">
@@ -338,7 +345,7 @@
             <a
               href="https://github.com/Sandekala"
               target="_blank"
-              class="w-10 h-10 flex items-center justify-center m-2 border-solid border-neutral-300 text-neutral-300 border-2 rounded-full hover:bg-primary hover:text-white transition-all duration-300 ease-in-out"
+              class="w-10 h-10 flex items-center justify-center m-2 dark:border-white dark:text-white dark:border-solid border-solid border-neutral-300 text-neutral-300 border-2 rounded-full hover:bg-primary hover:text-white transition-all duration-300 ease-in-out"
             >
               <svg
                 width="20px"
@@ -355,9 +362,9 @@
             </a>
             <!-- LinkedIn -->
             <a
-              href="https://www.linkedin.com/in/dimas-abdul-aziz-6a6b6b1a6"
+              href="https://www.linkedin.com/in/diimasaziiz"
               target="_blank"
-              class="w-10 h-10 flex items-center justify-center m-2 border-solid border-neutral-300 text-neutral-300 border-2 rounded-full hover:bg-primary hover:text-white transition-all duration-300 ease-in-out"
+              class="w-10 h-10 flex items-center justify-center m-2 dark:border-white dark:text-white dark:border-solid border-solid border-neutral-300 text-neutral-300 border-2 rounded-full hover:bg-primary hover:text-white transition-all duration-300 ease-in-out"
             >
               <svg
                 width="20px"
@@ -376,7 +383,7 @@
             <a
               href="https://instagram.com/diimasaziiz"
               target="_blank"
-              class="w-10 h-10 flex items-center justify-center m-2 border-solid border-neutral-300 text-neutral-300 border-2 rounded-full hover:bg-primary hover:text-white transition-all duration-300 ease-in-out"
+              class="w-10 h-10 flex items-center justify-center m-2 dark:border-white dark:text-white dark:border-solid border-solid border-neutral-300 text-neutral-300 border-2 rounded-full hover:bg-primary hover:text-white transition-all duration-300 ease-in-out"
               ><svg
                 width="20px"
                 class="fill-current"
@@ -394,7 +401,7 @@
             <a
               href="https://twitter.com/diimasaziiz"
               target="_blank"
-              class="w-10 h-10 flex items-center justify-center m-2 border-solid border-neutral-300 text-neutral-300 border-2 rounded-full hover:bg-primary hover:text-white transition-all duration-300 ease-in-out"
+              class="w-10 h-10 flex items-center justify-center m-2 dark:border-white dark:text-white dark:border-solid border-solid border-neutral-300 text-neutral-300 border-2 rounded-full hover:bg-primary hover:text-white transition-all duration-300 ease-in-out"
               ><svg
                 width="20px"
                 class="fill-current"
@@ -410,7 +417,7 @@
             </a>
           </div>
           <div class="relative lg:w-fit m-auto w-[220px] mt-6">
-            <p class="text-neutral-300 lg:text-1xl text-center">Made by <span class="lg:text-2xl font-semibold text-white">Dimas Abdul Aziz </span>with <span class="transition-all duration-300 ease-in-out lg:text-2xl font-semibold text-white hover:text-primary"><a href="https://tailwindcss.com/" target="_blank">tailwindCSS</a></span><span class="text-sky-400">
+            <p class="text-neutral-300 lg:text-1xl text-center dark:text-textDark">Made by <span class="lg:text-2xl font-semibold text-white">Dimas Abdul Aziz </span>with <span class="transition-all duration-300 ease-in-out lg:text-2xl font-semibold text-white hover:text-primary"><a href="https://tailwindcss.com/" target="_blank">tailwindCSS</a></span><span class="text-sky-400">
               <svg class="fill-current w-6 h-6 lg:absolute lg:-right-6 lg:top-0 top-5 right-5 absolute" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Tailwind CSS</title><path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/></svg>
             </span></p>
           </div>
