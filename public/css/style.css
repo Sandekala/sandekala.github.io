@@ -1425,6 +1425,16 @@ span > #typed {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.dark .dark\:shadow-textDark {
+  --tw-shadow-color: #717171;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.dark .dark\:shadow-dark {
+  --tw-shadow-color: #242424;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 .dark .dark\:hover\:text-primary:hover {
   --tw-text-opacity: 1;
   color: rgb(126 34 206 / var(--tw-text-opacity));
