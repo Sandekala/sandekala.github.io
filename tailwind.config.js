@@ -14,7 +14,7 @@ module.exports = {
         primary: '#7e22ce',
         dark: '#242424',
         dark2: '#1b1b1b',
-        textDark: '#f9f9f9',
+        textDark: '#717171',
       },
     },
     screen: {

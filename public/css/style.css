@@ -1417,7 +1417,7 @@ span > #typed {
 
 .dark .dark\:text-textDark {
   --tw-text-opacity: 1;
-  color: rgb(249 249 249 / var(--tw-text-opacity));
+  color: rgb(113 113 113 / var(--tw-text-opacity));
 }
 
 .dark .dark\:shadow-slate-500 {
