@@ -1257,6 +1257,21 @@ span > #typed {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(170 170 170 / var(--tw-bg-opacity));
+}
+
+::-webkit-scrollbar-thumb:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(113 113 113 / var(--tw-bg-opacity));
+}
+
 .placeholder\:text-transparent::-moz-placeholder {
   color: transparent;
 }

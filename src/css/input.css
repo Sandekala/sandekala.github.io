@@ -32,3 +32,11 @@ span > #typed {
 .toggle-deactive {
   @apply -rotate-90 transition-all duration-500 ease-in-out;
 }
+
+::-webkit-scrollbar {
+  @apply w-[8px];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-xl bg-[#aaa] hover:bg-[#717171];
+}
