@@ -1420,18 +1420,8 @@ span > #typed {
   color: rgb(113 113 113 / var(--tw-text-opacity));
 }
 
-.dark .dark\:shadow-slate-500 {
-  --tw-shadow-color: #64748b;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
 .dark .dark\:shadow-textDark {
   --tw-shadow-color: #717171;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.dark .dark\:shadow-dark {
-  --tw-shadow-color: #242424;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
