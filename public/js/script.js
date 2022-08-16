@@ -38,13 +38,13 @@ window.onscroll = () => {
 //toggle hamburger
 
 hamburger.addEventListener('click', function () {
-  nav.classList.toggle('hidden');
+  nav.classList.toggle('navHide');
   hamburger.classList.toggle('active');
 });
 
 navList.forEach((list) =>
   list.addEventListener('click', () => {
-    nav.classList.add('hidden');
+    nav.classList.add('navHide');
     hamburger.classList.remove('active');
   })
 );
